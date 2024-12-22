@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <Fragment>
       <Head>
-        <title>Aquariun - Admin Login</title>
+        <title>MawwunyoMarket- Admin Login</title>
         <meta name="description" content="Aquariun Admin" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
