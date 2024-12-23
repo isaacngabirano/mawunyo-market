@@ -358,13 +358,15 @@ router.get("/getLayouts", async (req, res) => {
   let sectionfour = await layout
     .getSectionsRowOne("sectionfour")
     .catch((err) => {
-      res.status(500).json("err");
+      return res.status(500).json({ error: "Error fetching section four" });
     });
 
-  let sectiontwo = await layout.getSectionsRowTwo("sectiontwo").catch((err) => {
-    res.status(500).json("err");
-  });
+  // Check if response was already sent
+  if (res.headersSent) return;
 
+  let sectiontwo = await layout.getSectionsRowTwo("sectiontwo").catch((err) => {
+    return res.status(500).json({ error: "Error fetching section two" });
+  });
   let sectionthree = await layout
     .getSectionsRowTwo("sectionthree")
     .catch((err) => {
@@ -595,7 +597,7 @@ router.post("/login", (req, res) => {
         );
 
         res.status(200).json({ user: token });
-        console.log('successfuly logged in')
+        console.log("successfuly logged in");
       } else {
         res.status(200).json({ user: undefined });
       }
