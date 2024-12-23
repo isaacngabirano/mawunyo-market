@@ -595,6 +595,7 @@ router.post("/login", (req, res) => {
         );
 
         res.status(200).json({ user: token });
+        console.log('successfuly logged in')
       } else {
         res.status(200).json({ user: undefined });
       }
