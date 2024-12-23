@@ -77,7 +77,7 @@ export default function EditProduct() {
     return (
         <Fragment>
             <Head>
-                <title>Aquariun - Vendor Edit Product</title>
+                <title>MawunyoMarket - Vendor Edit Product</title>
                 <meta name="description" content="Aquariun Vendor" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>

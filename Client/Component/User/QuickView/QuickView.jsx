@@ -172,8 +172,8 @@ function QuickView() {
                         </div>
                         <div className="rightDiv">
                             <h3 className='font-bolder UserBlackMain'><small>{QuickVw.product.name}</small></h3>
-                            <h5 className='font-bolder pt-1'><small className='UserGrayMain'><del>₹{QuickVw.product.mrp}</del></small>
-                                &nbsp;&nbsp;₹{QuickVw.product.price}</h5>
+                            <h5 className='font-bolder pt-1'><small className='UserGrayMain'><del>sh{QuickVw.product.mrp}</del></small>
+                                &nbsp;&nbsp;sh{QuickVw.product.price}</h5>
                             <div className="pt-2 pb-2" style={{ color: '#777' }} dangerouslySetInnerHTML={{ __html: QuickVw.product.srtDescription }}></div>
 
                             <h6 className='UserBlackMain'><span className='UserGrayMain font-normal text-small' >AVAILABILITY:</span>

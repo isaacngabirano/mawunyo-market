@@ -836,13 +836,7 @@ router.delete('/deleteVendor', CheckAdmin, (req, res) => {
 router.get('/getSpecificVendor', CheckAdmin, (req, res) => {
     if (req.query.vendorId.length === 24) {
         admin.getSpecificVendor(req.query.vendorId).then((data) => {
-            if (data) {
-                res.status(200).json(data)
-            } else {
-                res.status(404).json({
-                    status: 404
-                })
-            }
+            res.status(200).json(data)
         }).catch(() => {
             res.status(500).json('err')
         })

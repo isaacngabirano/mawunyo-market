@@ -135,8 +135,8 @@ function ProductList({ loaded, setLoaded }) {
                                                                     <small><small>{obj.discount}%</small></small>
                                                                 </span>
                                                                 &nbsp;
-                                                                <small><del className='UserGrayMain font-bold'>₹{obj.mrp}</del>&nbsp;</small>
-                                                                <span className='UserBlackMain2nd font-bold'>₹{obj.price}</span>
+                                                                <small><del className='UserGrayMain font-bold'>sh{obj.mrp}</del>&nbsp;</small>
+                                                                <span className='UserBlackMain2nd font-bold'>sh{obj.price}</span>
 
                                                             </h6>
                                                         </div>

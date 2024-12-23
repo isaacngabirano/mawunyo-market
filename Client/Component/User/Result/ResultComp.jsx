@@ -354,7 +354,7 @@ function ResultComp({
                               <div className='pt-2 textArea'>
                                 <h6 className='UserGrayMain text-small oneLineTxt'><small>{obj.category}</small></h6>
                                 <h6 className='UserBlackMain oneLineTxt'>{obj.name}</h6>
-                                <h6><small className='UserGrayMain text-small'><del>₹ {obj.mrp}</del></small> <span className='UserBlackMain'>₹ {obj.price}</span></h6>
+                                <h6><small className='UserGrayMain text-small'><del>sh {obj.mrp}</del></small> <span className='UserBlackMain'>sh {obj.price}</span></h6>
                               </div>
                             </Link>
                           </div>
@@ -489,7 +489,7 @@ function ResultComp({
                                     <div className='pt-2'>
                                       <h6 className='UserGrayMain text-small oneLineTxt'><small>{obj.category}</small></h6>
                                       <h6 className='UserBlackMain oneLineTxt'>{obj.name}</h6>
-                                      <h6><small className='UserGrayMain text-small'><del>₹ {obj.mrp}</del></small> <span className='UserBlackMain'>₹ {obj.price}</span></h6>
+                                      <h6><small className='UserGrayMain text-small'><del>sh {obj.mrp}</del></small> <span className='UserBlackMain'>sh {obj.price}</span></h6>
                                     </div>
                                   </Link>
                                 </div>

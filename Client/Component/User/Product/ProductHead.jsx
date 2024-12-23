@@ -24,8 +24,8 @@ function ProductHead() {
                             <div className="pt-2">
                                 <h6 className='font-bold UserBlackMain oneLineTxtMax-300'>{product.name}</h6>
                                 <h6 className='font-normal'>
-                                    <span className='UserGrayMain'><small><del>₹ {product.mrp}</del></small>&nbsp;</span>
-                                    <span className='UserBlackMain'>₹ {product.price}&nbsp;</span>
+                                    <span className='UserGrayMain'><small><del>sh {product.mrp}</del></small>&nbsp;</span>
+                                    <span className='UserBlackMain'>sh {product.price}&nbsp;</span>
                                     {
                                         product.available === "true" ? (
                                             <span className='UserGrayMain text-small'>&nbsp;In stock</span>

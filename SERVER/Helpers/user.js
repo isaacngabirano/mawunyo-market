@@ -1484,11 +1484,11 @@ export default {
                 userId: userId,
                 'saved.name': name,
                 'saved.number': number,
-                'saved.pin': pin,
+                // 'saved.pin': pin,
                 'saved.locality': locality,
                 'saved.address': address,
                 'saved.city': city,
-                'saved.state': state
+                // 'saved.state': state
             }).catch(() => {
                 reject()
             })
@@ -1502,11 +1502,11 @@ export default {
                             id: new ObjectId().toHexString(),
                             name: name,
                             number: number,
-                            pin: pin,
+                            // pin: pin,
                             locality: locality,
                             address: address,
                             city: city,
-                            state: state
+                            // state: state
                         }
                     }
                 }, { upsert: true }).then(() => {
@@ -1539,11 +1539,11 @@ export default {
                 $set: {
                     'saved.$.name': details.name,
                     'saved.$.number': details.number,
-                    'saved.$.pin': details.pin,
+                    // 'saved.$.pin': details.pin,
                     'saved.$.locality': details.locality,
                     'saved.$.address': details.address,
                     'saved.$.city': details.city,
-                    'saved.$.state': details.state
+                    // 'saved.$.state': details.state
                 }
             }).then(() => {
                 resolve()

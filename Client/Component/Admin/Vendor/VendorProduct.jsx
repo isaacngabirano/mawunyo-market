@@ -109,10 +109,10 @@ function VendorProduct({ vendorId, loaded, setLoaded }) {
                             {obj.category}
                           </td>
                           <td>
-                            ₹{obj.price}
+                            sh{obj.price}
                           </td>
                           <td>
-                            ₹{obj.mrp}
+                            sh{obj.mrp}
                           </td>
                           <td>
                             {obj.discount} %

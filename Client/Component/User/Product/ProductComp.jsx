@@ -286,9 +286,9 @@ function ProductComp() {
                   </span>
                   &nbsp;
                   <span><small className='UserGrayMain'>
-                    <small><del>₹ {product.mrp}</del></small>
+                    <small><del>sh {product.mrp}</del></small>
                   </small></span>
-                  &nbsp;<span className='UserBlackMain'>₹ {product.price}</span>
+                  &nbsp;<span className='UserBlackMain'>sh {product.price}</span>
                 </h3>
 
                 <h6 style={{ fontSize: '14px', textTransform: 'uppercase' }}>
@@ -880,10 +880,10 @@ function ProductComp() {
                 </span>
                 &nbsp;
                 <span><small className='UserGrayMain'>
-                  <small><del>₹ {product.mrp}</del></small>
+                  <small><del>sh {product.mrp}</del></small>
                 </small></span>
                 &nbsp;
-                <span className='UserBlackMain'>₹ {product.price}</span>
+                <span className='UserBlackMain'>sh {product.price}</span>
               </h3>
 
               <h6 style={{ fontSize: '14px', textTransform: 'uppercase' }}>
@@ -1494,7 +1494,7 @@ function ProductComp() {
                         <div className='pt-2'>
                           <h6 className='UserGrayMain text-small oneLineTxt'><small>{obj.category}</small></h6>
                           <h6 className='UserBlackMain oneLineTxt'>{obj.name}</h6>
-                          <h6><small className='UserGrayMain text-small'><del>₹ {obj.mrp}</del></small> <span className='UserBlackMain'>₹ {obj.price}</span></h6>
+                          <h6><small className='UserGrayMain text-small'><del>sh {obj.mrp}</del></small> <span className='UserBlackMain'>sh {obj.price}</span></h6>
                         </div>
                       </Link>
                     </div>

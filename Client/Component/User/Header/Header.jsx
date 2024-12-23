@@ -260,7 +260,7 @@ function Header() {
                                   navigate.push("/cart");
                                 }}
                               >
-                                ₹ {cartTotal}
+                                sh {cartTotal}
                               </h6>
                             </>
                           ) : (
@@ -411,7 +411,7 @@ function Header() {
         </div>
 
         <div className={style.UserHeadMob}>
-          <div className={style.subTop}>
+          {/* <div className={style.subTop}>
             <div className="container">
               <div className="row">
                 <div className="col-12">
@@ -427,7 +427,7 @@ function Header() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className={style.MainMob + " pt-3"}>
             <div className="container">
@@ -449,7 +449,9 @@ function Header() {
                 </div>
                 <div className="col-6">
                   <Link className="LinkTagNonDec" href="/">
-                    <h3 className="UserGreenMain text-center">E Fish</h3>
+                    <h3 className="UserGreenMain text-center">
+                      Mawunyo Market
+                    </h3>
                   </Link>
                 </div>
                 <div className="col-3 text-end">
